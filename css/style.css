@@ -1,0 +1,125 @@
+/* general */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Combo', cursive;
+}
+
+/* components */
+
+.container{
+
+  max-width: 1200px;
+  width: 80%;
+  margin: 20px auto;
+  
+}
+
+/* utility */
+
+.clearfix::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+.debug{
+
+  background-color: rgba(255, 80, 70, 0.50);
+  border: 1px solid black;
+}
+
+/* header */
+
+header{
+  height: 80px;
+  background-color: red;
+  padding: 20px;
+  text-align: center;
+}
+
+header .logo{
+  width: 100px;
+  height: 40px;
+  background-color: blueviolet;
+  float: left;
+}
+
+header p{
+  line-height: 40px;
+  float: right;
+}
+
+.menu{
+  display: inline-block;
+  line-height: 40px;
+}
+
+.menu ul{
+  list-style: none;
+}
+.menu ul li{
+  display: inline;
+  padding-right: 10px;
+}
+
+.menu ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+
+.menu ul li a:hover{
+  text-decoration: underline;
+}
+
+/* main */
+
+.jumbotron{
+
+  text-align: center;
+  height: 700px;
+}
+
+.jumbotron img{
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.row .col{
+  float: left;
+  width: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
+}
+  
+
+.row .col img{
+  height: 200px;
+}
+
+.row .col h2{
+  padding: 20px 0;
+  color: red;
+}
+
+.row .col p{
+  text-align: left;
+}
+
+footer{
+  height: 80px;
+  background-color: yellow;
+}
+
+footer p{
+  text-align: center;
+  font-size: 40px;
+}
